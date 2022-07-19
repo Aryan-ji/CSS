@@ -1,0 +1,49 @@
+*{
+    margin: auto;
+    padding: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: normal;
+}
+
+#firstPara{
+    background-color: red;
+    height: 100px;
+    width: 495px;
+    /* border-color: greenyellow;
+    border-style: solid;
+    border-width: 4px;
+    */
+    border-radius: 13px; 
+    border: 2px solid blue;
+    /* border: border-size border-style border-color ; */
+}
+
+#secondPara{
+    background-color: magenta;
+    height: 144px;
+    width: 444px;
+    border-top: 114px solid rgb(24, 131, 232);
+    border-left: 114px solid rgb(212, 19, 19);
+    border-right: 114px solid rgb(52, 221, 22);
+    border-bottom:114px solid rgb(96, 14, 236);
+    /* border-radius: 25px; */
+    border-top-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    text-align: center;
+    
+}
+#thirdPara{
+   background-image:url(/cola_product.png);
+    height: 1100px;
+    width: 1444px;
+    border: 2px solid red;
+ background-repeat: no-repeat;
+ /* to stop the repeating of imges 
+ repeat-x and repeat-y repeats img in x and y direction respectively */
+ background-position: center top;
+ /*top in y-axis not allowed
+  background-position: x-axis y-axis; */
+ background-position: 550px 12px;
+    
+}

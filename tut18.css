@@ -1,0 +1,18 @@
+#firstPara{
+    font-family: monospace;
+    color: red;
+    /* color by name  */
+}
+#secondPara
+{
+    color: rgb(142, 232, 124);
+    /* color by rgb value  */
+    /* rgb(red, green, blue); */
+}
+
+#thirdPara{
+    color: #ffba83;
+    /* color by heex value
+    color: #RRGGBB; */
+
+}

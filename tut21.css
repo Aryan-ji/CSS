@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+}
+
+.container {
+    width: 900px;
+    border: 2px solid rgb(34, 112, 181);
+    margin: 33px auto;
+}
+
+.items {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+
+    border: 2px solid maroon;
+    margin: 12px 3px;
+    padding: 12px 3px;
+    background: rgb(230, 186, 186);
+}
+
+#fruits {
+    float: left;
+    width: 48%;
+}
+
+#computer {
+    
+    float: left;
+    width: 48%;
+    
+}
+
+#stationary {
+    margin-right: 2px;
+    clear: left;
+    /* clear prevents overlapping  */
+    /* float: left; */
+    width: 100%;
+
+}
+p, h3{
+    text-align: right;
+    text-align: left;
+    text-align: center;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+}

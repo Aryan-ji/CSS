@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #763fbd;
+}
+.container {
+    background-color: burlywood;
+    border: 2px solid red;
+    margin: 30px;
+    /* padding: 90px; */
+
+    /* we can set margin/padditng for top,bottom,left and right seperately */
+
+    /* margin/padding-top: 12px;
+
+    margin/padding-bottom: 25px;
+
+    margin/padding-right: 34px;
+    
+    margin/padding-left: 36px; */
+
+    /* margin/padding: 23px 56px 6px 78px;
+
+    margin/padding: top right bottom left; */
+
+    padding: 34px 19px;
+
+    /* margin/padding: y(top/bottom) x(left/right); */
+
+    margin: 34px 19px;
+    border-radius: 23px;
+    width: 533px;
+    box-sizing: border-box;
+}

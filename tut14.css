@@ -1,0 +1,5 @@
+p{
+    color: magenta!important;
+    color: brown ;
+    /* to enforce any css property to overlap default setting !important atribute is used as CSS takes preference of the css property written latest but to use old property we used !important(property with is atribute can't be overwritten */
+}

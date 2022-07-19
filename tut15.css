@@ -1,0 +1,21 @@
+/* element selectors */
+p {
+    color: red;
+    border: 2px solid fuchsia;
+}
+
+/* id selectors
+applies on only specific id providen to the css proprty */
+#firstPara {
+    color:green;
+}
+/* class selector 
+applies on all the elements having the class providen */
+.bgBlue{
+    color: yellow;
+    background-color: blue;
+}
+/* grouped selectors */
+footer, span{
+    background-color: pink;
+}
