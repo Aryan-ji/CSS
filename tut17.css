@@ -1,0 +1,14 @@
+p{
+font-family:  monospace;
+font-size: 23px;
+/* 1px = 1/96th of an inch */
+line-height: .3em;
+/* mutliple of parent font size is em  */
+/* specifies the height  be two fonts  */
+}
+/* web safe fonts are pre-installed fonts in the system 
+doesn't neets internet access to run it  */
+span{
+    font-weight: bold;
+    font-style: italic;
+}

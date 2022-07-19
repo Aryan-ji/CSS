@@ -1,0 +1,36 @@
+/* position: static(default), absolute ,relative,fixed & sticky */
+.container {
+    border: 2px solid green;
+    background-color: khaki;
+    height: 5000px;
+}
+
+.container1 {
+    border: 2px solid rgb(0, 9, 128);
+    background-color: rgb(33, 225, 72);
+    height: 5000px;
+}
+
+.box {
+    display: inline-block;
+    border: 2px solid rgba(0, 68, 255, 0.666);
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+}
+
+#box3 {
+    position: static;
+    /* it is default  */
+    position: relative;
+    /* will move according to its normal position and will leave a gap to its normal position */
+    position: absolute;
+    /* will move according to its first parent position  */
+    position: fixed;
+    /* fixes throuout the page /relative to its browser window viewport isn't affected */
+    position: sticky;
+    /* sticks to the parent element affected by viewport  */
+    /* right: 34px;
+    bottom: 3px; */
+    top: 3px;
+}
