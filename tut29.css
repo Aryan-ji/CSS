@@ -1,0 +1,31 @@
+html {
+    font-size: 30px;
+}
+
+.container {
+    font-size: 10px;
+    border: 22px solid rebeccapurple;
+    /* vh and vw takes the height and width according to the viewport of the browser act as percentage of the viewport */
+    /* width: 400px; */
+    width: 100vw;
+    /* height: 344px; */
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+#first {
+    /* em takes the multiple time the size of parent element */
+    font-size: 3em;
+    /* in case of padding/margin it takes the multiple of font size instead of parent element */
+    padding: 3em;
+
+}
+
+#second {
+    /* it takes the multiple of document size (html) */
+    font-size: 3rem;
+    padding: 3rem;
+}

@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    background-color: red;
+    color: #000;
+    font-weight: bold;
+}
+
+/* The following syntax applies the property to all the p elements lying in div tags */
+/* div p {
+    color: yellow;
+    font-weight: bolder;
+    background-color: green;
+} */
+
+/* The following syntax will  affect the only direct childs p of the div tag */
+/* div>p {
+    color: red;
+    font-weight: bolder;
+    background-color: rgb(145, 20, 198);
+} */
+
+/* this will affect the p tags whose previous sibligs were div  i.e. p are right inside div*/
+/* div+p {
+    color: antiquewhite;
+    background-color: blue;
+} */
+
+/* The following syntax applies the property to all the p element lying in li  tag  under div tag*/
+div li a p {
+    color: yellowgreen;
+    font-weight: bolder;
+    background-color: magenta;
+}

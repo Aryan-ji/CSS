@@ -1,0 +1,79 @@
+.container {
+    height: 544px;
+    width: 100%;
+    border: 2px solid black;
+    /* initialises the container as flex box  */
+    display: flex;
+    /* FLex properties for  flex container */
+    /* flex-direction proprety determines the starting direction of the box.  */
+    flex-direction: row;
+    /* default property*/
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    /* flex-wrap property helps us to improve the wrapping as whenever we change the size of display it doesn't changes according to the device screen which is a huge ? on reponsiveness of any wesite  */
+    flex-wrap: nowrap;
+    /*default property*/
+    flex-wrap: wrap;
+    /* it wraps the extra boxes* to the next line*/
+    flex-wrap: wrap-reverse;
+    /* it wraps the extra boxes* to the next line from end i.e starts from last box and it sends all the boxes to bottom (first)*/
+    /* shorthand for the flex direction & flex wrap */
+    /* flex-flow: flex-direction || flex-wrap; */
+    flex-flow: row wrap;
+    /* It will justify the content in horizontal direction */
+    justify-content: center;
+    /* aligns the items to the center*/
+    justify-content: space-between;
+    /*determines the space between two boxes*/
+    justify-content: space-evenly;
+    /*determines the space from both left and right sides*/
+    justify-content: space-around;
+    /*space around a box rather left or right provide equally*/
+    /* It will justify the content in vertical direction */
+    align-items: center;
+    /*verically centers the items*/
+    align-items: flex-end;
+    /*aligns the items to the bottom*/
+    align-items: flex-start;
+    /*aligns the items to the top and is a default value*/
+    align-items: stretch;
+    /* Aligns flex items along the cross axis of the current line of the flex container.*/
+}
+
+.items {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    border: 2px solid green;
+    margin: 2px;
+    padding: 2px;
+}
+
+#items-1 {
+    /* flex property for flex items */
+    /* order: 2; */
+    flex-grow: 5;
+}
+
+#items-2 {
+    /* higher the, order the later it shows up in the container */
+    /* order: 4; */
+    /* higher the grow value the item will exand more when oppertunity providen*/
+    flex-grow: 9;
+    /* higher the shrink value the item will shrink more when oppertunity providen */
+    flex-shrink: 9;
+}
+
+#items-3 {
+    /* if flex direction is set to row one can change width of box else it will change the height for flex direction to column */
+    flex-basis: 4400px;
+    /* shorthand for these three properties  */
+    /* flex: flex-grow || flex-shrink || flex-basis; */
+    flex: 12 12 223px;
+    align-self: flex-end;
+    align-self: flex-start;
+    align-self: center;
+    /* aligns the item accordeing to the value asked */
+}
