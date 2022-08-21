@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+}
+
+.card {
+    padding: 23px 12px;
+    margin: 23px 12px;
+    /* border: 2px solid red; */
+    background-color: chocolate;
+    box-shadow: 12px 14px 2px rgba(107, 173, 173, 0.5);
+    box-shadow: 14px red, 15px yellow,;
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    /* box-shadow:inset offset-x offset-y blur-radius spread-radius color; */
+    /* inset determines the upper and left shadow of box i.e. negative offset-x and offset-y */
+    /* box-shadow: inset 12px 14px 2px rgba(107, 173, 173, 0.5); */
+    /* multiple-shadow */
+box-shadow: 3px 5px 2px green,4px 6px 2px red;
+}
+
+.card h1 {
+    /* color: rebeccapurple; */
+    text-shadow: 3px 2px 5px white;
+    text-shadow: -3px -2px 5px white;
+
+    /* Generally,it is used to provide attention to some specific text as texts displayed on on images which will make it more professional  */
+}
+
+.card h1:hover {
+    filter: invert(100%);
+  
+}

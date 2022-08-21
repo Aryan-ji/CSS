@@ -1,0 +1,30 @@
+:root {
+    --primery-color: red;
+    --secondry-color: green;
+    --box-color: red;
+    --maxw:773px;
+    /* block lvl scopes overwrites the global lvl scopes */
+}
+
+/* all the vaiables in the root are global lvl scopes */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--maxw);
+    margin: auto;
+    background-color: var(--primery-color) ;
+}
+
+.box {
+    /* Var in CSS is a block level scope */
+    /* not accessed outside the selectors */
+    --box-color: darkblue;
+    width: 200px;
+    height: 200px;
+    background-color: var(--box-color);
+    box-shadow: 4px 6px 5px var(--box-color);
+    margin: 2px 9px;
+    border: 2px solid red;
+
+}

@@ -1,0 +1,87 @@
+.container {
+    background-color: greenyellow;
+}
+
+
+.box {
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    /* name of animation */
+    animation-name: ary1;
+    animation-name: ary2;
+    /* time for which an animation will run */
+    animation-duration: 8s;
+    /* animation-fill-mode: forwards; */
+    /* this attribute determines the speed of the aniamtion */
+    /* in case of ease-out the speed is fast to slow */
+    /* in case of ease-in the speed is slow to fast */
+    /* in case of ease-in the speed is slow to fast to slow */
+    /* animation-timing-function: ease-in-out; */
+    
+    
+    /* no. of time the animation will repeat */
+    animation-iteration-count: infinite;
+    /* time for which animation stops */
+    animation-delay: 1s;
+    animation-direction: normal;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: aryan 12s ease-in-out 1s 12 normal backwards;
+}
+
+/* @keyframes animation-name */
+@keyframes ary1 {
+
+    /* from is an initial value */
+    /* from{propeties} */
+    from {
+        width: 0px;
+    }
+
+    /* to is a final value */
+    /* to{properties} */
+    to {
+        width: 1000px;
+    }
+}
+
+@keyframes ary2 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 250px;
+        left: 0px;
+    }
+
+    75% {
+        top: 250px;
+        left: 250px;
+    }
+
+    100% {
+        top: 0px;
+        left: 250px;
+    }
+}
+
+@keyframes aryan {
+    0% {
+    background-color: red;
+    }
+
+    25% {
+    background-color: blue;
+    }
+
+    75% {
+    background-color: yellow;
+    }
+
+    100% {
+    background-color: magenta;
+    }
+}
