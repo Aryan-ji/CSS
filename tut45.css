@@ -1,0 +1,122 @@
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';
+
+}
+
+nav {
+    grid-area: navbar;
+}
+
+aside {
+    grid-area: aside;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    text-align: center;
+    grid-area: footer;
+}
+
+li {
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+
+
+}
+
+li:hover {
+    border-radius: 30px;
+    padding: 5px;
+    background-color: #000000;
+    color: #fff;
+}
+
+@media only screen and (max-width:300px) {
+    body {
+        background-color: blueviolet;
+    }
+
+    .container {
+        grid-template-areas: 'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+    }
+
+    li {
+        display: block;
+        text-align: center;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    body {
+        background-color: yellow;
+    }
+
+    .container {
+        grid-template-areas: 'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+    }
+
+    aside {
+        display: none;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+    body {
+        background-color: green;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-areas: 'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+    }
+}
+}
+
+@media only screen and (min-width:800px) {
+    body {
+        background-color: maroon;
+    }
+}
+
+/* Utility Classes */
+.bdr {
+    border: 2px solid black;
+    padding: 23px;
+    background-color: wheat;
+}
+
+@media only screen and (min-width:800px) {
+    body {
+        background-color: maroon;
+    }
+}

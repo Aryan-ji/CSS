@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    /* the above property will divide the .grid in the ratio of 1:1:4 and as row and rst will be providen as the width 1fr */
+    grid-auto-rows: 2fr;
+    /* this will provide the rest of row a width of 3fr */
+    grid-template-columns: repeat(4,2fr);
+    grid-gap: 2rem;
+}
+.box{
+    background-color: red;
+    border: 2px solid black;
+}

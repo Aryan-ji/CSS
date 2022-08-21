@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 7rem;
+    /* grid-column-gap provides a gap between two column */
+    grid-row-gap: 1rem;
+    /* grid-row-gap provides a gap between two row */
+    grid-gap: 1rem;
+}
+
+.box {
+    border: 2px solid black;
+    background-color: rgb(211, 135, 211);
+    padding: 23px;
+    text-align: center;
+}
+
+.box:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* the above  starts from line number 1 to line number 3 i.e. two box */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 1 /span 3;
+    /* the above is shorthand for the grid-column-start and grid-row-end from box 1 to 3 the only difference is this will span the box unlike the previous syntax which spans using line of th box */
+}
